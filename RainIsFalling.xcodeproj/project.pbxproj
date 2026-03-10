@@ -6,15 +6,30 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		8F527CF92F5C89F70048076C /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8F527CF52F5C89F70048076C /* SnapKit */; };
+		8F527D472F5F36DB0048076C /* SwiftlyNetFlex in Frameworks */ = {isa = PBXBuildFile; productRef = 8F527D462F5F36DB0048076C /* SwiftlyNetFlex */; };
+		8F527D492F5F36E30048076C /* SwiftlyNetFlex in Frameworks */ = {isa = PBXBuildFile; productRef = 8F527D482F5F36E30048076C /* SwiftlyNetFlex */; };
+		8FA1403C2F5722610060B1D2 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8FA1403B2F5722610060B1D2 /* SnapKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
+		8F527CFE2F5C89F70048076C /* RainIsFalling Stage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "RainIsFalling Stage.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FDE739A2F54D0E600FB21F8 /* RainIsFalling.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RainIsFalling.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		8F527CFF2F5C89F70048076C /* Exceptions for "RainIsFalling" folder in "RainIsFalling Stage" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Core/Plist/Info.plist,
+			);
+			target = 8F527CF42F5C89F70048076C /* RainIsFalling Stage */;
+		};
 		8FDE73AC2F54D0E700FB21F8 /* Exceptions for "RainIsFalling" folder in "RainIsFalling" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
-				Info.plist,
+				Core/Plist/Info.plist,
 			);
 			target = 8FDE73992F54D0E600FB21F8 /* RainIsFalling */;
 		};
@@ -25,6 +40,7 @@
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
 				8FDE73AC2F54D0E700FB21F8 /* Exceptions for "RainIsFalling" folder in "RainIsFalling" target */,
+				8F527CFF2F5C89F70048076C /* Exceptions for "RainIsFalling" folder in "RainIsFalling Stage" target */,
 			);
 			path = RainIsFalling;
 			sourceTree = "<group>";
@@ -32,20 +48,39 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		8F527CF82F5C89F70048076C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F527D492F5F36E30048076C /* SwiftlyNetFlex in Frameworks */,
+				8F527CF92F5C89F70048076C /* SnapKit in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FDE73972F54D0E600FB21F8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F527D472F5F36DB0048076C /* SwiftlyNetFlex in Frameworks */,
+				8FA1403C2F5722610060B1D2 /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8F527D452F5F36DB0048076C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		8FDE73912F54D0E600FB21F8 = {
 			isa = PBXGroup;
 			children = (
 				8FDE739C2F54D0E600FB21F8 /* RainIsFalling */,
+				8F527D452F5F36DB0048076C /* Frameworks */,
 				8FDE739B2F54D0E600FB21F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -54,6 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				8FDE739A2F54D0E600FB21F8 /* RainIsFalling.app */,
+				8F527CFE2F5C89F70048076C /* RainIsFalling Stage.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,6 +97,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		8F527CF42F5C89F70048076C /* RainIsFalling Stage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F527CFB2F5C89F70048076C /* Build configuration list for PBXNativeTarget "RainIsFalling Stage" */;
+			buildPhases = (
+				8F527CF72F5C89F70048076C /* Sources */,
+				8F527CF82F5C89F70048076C /* Frameworks */,
+				8F527CFA2F5C89F70048076C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				8FDE739C2F54D0E600FB21F8 /* RainIsFalling */,
+			);
+			name = "RainIsFalling Stage";
+			packageProductDependencies = (
+				8F527CF52F5C89F70048076C /* SnapKit */,
+				8F527D482F5F36E30048076C /* SwiftlyNetFlex */,
+			);
+			productName = RainIsFalling;
+			productReference = 8F527CFE2F5C89F70048076C /* RainIsFalling Stage.app */;
+			productType = "com.apple.product-type.application";
+		};
 		8FDE73992F54D0E600FB21F8 /* RainIsFalling */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8FDE73AD2F54D0E700FB21F8 /* Build configuration list for PBXNativeTarget "RainIsFalling" */;
@@ -78,6 +138,8 @@
 			);
 			name = RainIsFalling;
 			packageProductDependencies = (
+				8FA1403B2F5722610060B1D2 /* SnapKit */,
+				8F527D462F5F36DB0048076C /* SwiftlyNetFlex */,
 			);
 			productName = RainIsFalling;
 			productReference = 8FDE739A2F54D0E600FB21F8 /* RainIsFalling.app */;
@@ -91,7 +153,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1600;
+				LastUpgradeCheck = 2630;
 				TargetAttributes = {
 					8FDE73992F54D0E600FB21F8 = {
 						CreatedOnToolsVersion = 16.0;
@@ -107,17 +169,29 @@
 			);
 			mainGroup = 8FDE73912F54D0E600FB21F8;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				8FA1403A2F5722610060B1D2 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				8F527D442F5F31190048076C /* XCRemoteSwiftPackageReference "SwiftlyNetFlex" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 8FDE739B2F54D0E600FB21F8 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				8FDE73992F54D0E600FB21F8 /* RainIsFalling */,
+				8F527CF42F5C89F70048076C /* RainIsFalling Stage */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		8F527CFA2F5C89F70048076C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FDE73982F54D0E600FB21F8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -128,6 +202,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		8F527CF72F5C89F70048076C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		8FDE73962F54D0E600FB21F8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -138,31 +219,99 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		8FDE73AE2F54D0E700FB21F8 /* Debug */ = {
+		8F527CFC2F5C89F70048076C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStage;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85D2483FS7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RainIsFalling/Info.plist;
+				INFOPLIST_FILE = RainIsFalling/Core/Plist/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zaebalaRazrabotkaIT.RainIsFalling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcwork.rainisfalling.stage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8F527CFD2F5C89F70048076C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIconStage;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RainIsFalling/Core/Plist/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcwork.rainisfalling.stage;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8FDE73AE2F54D0E700FB21F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RainIsFalling/Core/Plist/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcwork.rainisfalling;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -171,26 +320,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85D2483FS7;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RainIsFalling/Info.plist;
+				INFOPLIST_FILE = RainIsFalling/Core/Plist/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.weather";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.zaebalaRazrabotkaIT.RainIsFalling;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arcwork.rainisfalling;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -229,6 +382,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 85D2483FS7;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -252,6 +406,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -292,6 +447,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 85D2483FS7;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = YES;
@@ -308,6 +464,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -316,6 +473,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		8F527CFB2F5C89F70048076C /* Build configuration list for PBXNativeTarget "RainIsFalling Stage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F527CFC2F5C89F70048076C /* Debug */,
+				8F527CFD2F5C89F70048076C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		8FDE73952F54D0E600FB21F8 /* Build configuration list for PBXProject "RainIsFalling" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -335,6 +501,56 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8F527CF62F5C89F70048076C /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+		8F527D442F5F31190048076C /* XCRemoteSwiftPackageReference "SwiftlyNetFlex" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/namazii/SwiftlyNetFlex";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+		8FA1403A2F5722610060B1D2 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8F527CF52F5C89F70048076C /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F527CF62F5C89F70048076C /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		8F527D462F5F36DB0048076C /* SwiftlyNetFlex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F527D442F5F31190048076C /* XCRemoteSwiftPackageReference "SwiftlyNetFlex" */;
+			productName = SwiftlyNetFlex;
+		};
+		8F527D482F5F36E30048076C /* SwiftlyNetFlex */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8F527D442F5F31190048076C /* XCRemoteSwiftPackageReference "SwiftlyNetFlex" */;
+			productName = SwiftlyNetFlex;
+		};
+		8FA1403B2F5722610060B1D2 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8FA1403A2F5722610060B1D2 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8FDE73922F54D0E600FB21F8 /* Project object */;
 }
