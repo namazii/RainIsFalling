@@ -3,9 +3,13 @@ import SnapKit
 
 final class SplashVC: UIViewController {
 
+    var onCityResolved: ((String) -> Void)?
+
+    private let viewModel: SplashViewModel
+
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? "RainIsFalling"
+        label.text = "RainIsFalling"
         label.font = .systemFont(ofSize: 34, weight: .bold)
         label.textColor = .label
         label.textAlignment = .center
@@ -14,13 +18,23 @@ final class SplashVC: UIViewController {
 
     private var didTransition = false
 
+    init(viewModel: SplashViewModel) {
+        self.viewModel = viewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError()
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
+
         view.backgroundColor = Colors.BackGround.primary
         view.addSubview(titleLabel)
 
-        titleLabel.snp.makeConstraints { make in
-            make.center.equalToSuperview()
+        titleLabel.snp.makeConstraints {
+            $0.center.equalToSuperview()
         }
     }
 
@@ -30,23 +44,15 @@ final class SplashVC: UIViewController {
         guard !didTransition else { return }
         didTransition = true
 
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.9) { [weak self] in
-            self?.showMainScreen()
-        }
+        requestLocation()
     }
 
-    private func showMainScreen() {
-        guard let windowScene = view.window?.windowScene else { return }
-        guard let sceneDelegate = windowScene.delegate as? SceneDelegate else { return }
-
-        let mainViewController = ViewController()
-        UIView.transition(
-            with: sceneDelegate.window ?? UIWindow(),
-            duration: 0.25,
-            options: .transitionCrossDissolve,
-            animations: {
-                sceneDelegate.window?.rootViewController = mainViewController
+    private func requestLocation() {
+        viewModel.requestCity { [weak self] city in
+            guard let self else { return }
+            DispatchQueue.main.async {
+                self.onCityResolved?(city)
             }
-        )
+        }
     }
 }

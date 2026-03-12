@@ -12,10 +12,10 @@ struct Location: Codable {
 }
 
 struct CurrentWeather: Codable {
-    let temp_c: Double?
-    let feelslike_c: Double?
+    let tempC: Double?
+    let feelslikeC: Double?
     let humidity: Int
-    let wind_kph: Double?
+    let windKph: Double?
     let condition: Condition
 }
 
@@ -35,14 +35,14 @@ struct ForecastDay: Codable {
 }
 
 struct Day: Codable {
-    let maxtemp_c: Double?
-    let mintemp_c: Double?
+    let maxtempC: Double?
+    let mintempC: Double?
     let condition: Condition
 }
 
 struct Hour: Codable {
     let time: String
-    let temp_c: Double?
-    let is_day: Int?
+    let tempC: Double?
+    let isDay: Int?
     let condition: Condition
 }
