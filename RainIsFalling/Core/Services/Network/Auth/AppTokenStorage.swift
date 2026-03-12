@@ -10,6 +10,7 @@ struct AppTokenModel: TokenModelProtocol {
 protocol AppTokenStorageProtocol {
     func save(key: String)
     func load() -> String?
+    func delete() 
 }
 
 final class KeychainAPIKeyStorage {
